@@ -38,6 +38,26 @@ I've noticed that sometimes I need to go in and explicitly mark the iso as a Liv
       - https://github.com/AndrewDryga/vagrant-box-osx-mavericks/blob/master/README.md
   - To install command line tools after OS X is booted, open a terminal window and enter `xcode-select --install` (or just try using `git`, `gcc`, or other tools that would be installed with CLI tools).
 
+
+# Providign a Vagrant Box from Mac OS X VirtualBox VM
+
+Follow the instructions from [https://www.vagrantup.com/docs/virtualbox/boxes.html](https://www.vagrantup.com/docs/virtualbox/boxes.html) and [https://www.vagrantup.com/docs/boxes/base.html](https://www.vagrantup.com/docs/boxes/base.html).
+
+1. Inside your Mac OS X, create a system user `vagrant` with password `vagrant` that is allowed to manage the system.
+1. As a root user, run `sudo visudo` and add the following line (quit visudo with `:wq`)
+
+    ```
+    vagrant ALL=(ALL) NOPASSWD: ALL
+    ```
+
+1. Add the insecure public key for the vagrant user from [https://github.com/mitchellh/vagrant/tree/master/keys](https://github.com/mitchellh/vagrant/tree/master/keys). Add it to the `/Users/vagrant/.ssh/authorized_keys` file and make sure that the `.ssh` directory has filemode `0700` and `authorized_keys` has filemode `0600`.
+
+
+# Further Resources
+
+* [Fix screen resolution in virtual machine](http://www.wikigain.com/fix-macos-sierra-screen-resolution-virtualbox/)
+
+
 ## Author
 
-This project was created in 2015 by [Jeff Geerling](http://jeffgeerling.com/).  
+This project was created in 2015 by [Jeff Geerling](http://jeffgeerling.com/) and extended in 2016 by [Michael Lihs](http://lihsmi.ch)
