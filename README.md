@@ -39,7 +39,17 @@ I've noticed that sometimes I need to go in and explicitly mark the iso as a Liv
   - To install command line tools after OS X is booted, open a terminal window and enter `xcode-select --install` (or just try using `git`, `gcc`, or other tools that would be installed with CLI tools).
 
 
-# Providign a Vagrant Box from Mac OS X VirtualBox VM
+# Tweak your Mac OS X virtual machine
+
+* When the vm is running, select the right `CMD` key to un-capture the keyboard from the VM in order to  make standard shortcuts working when the keyboard is captured.
+
+
+# Connect your Mac OS X virtual machine to the internet
+
+Create a second network device with type `Bridge` and connect it to the device you are connected to the internet with (e.g. Airport).
+
+
+# Providing a Vagrant Box from Mac OS X VirtualBox VM
 
 Follow the instructions from [https://www.vagrantup.com/docs/virtualbox/boxes.html](https://www.vagrantup.com/docs/virtualbox/boxes.html) and [https://www.vagrantup.com/docs/boxes/base.html](https://www.vagrantup.com/docs/boxes/base.html).
 
@@ -65,6 +75,6 @@ Follow the instructions from [https://www.vagrantup.com/docs/virtualbox/boxes.ht
 * [Fix screen resolution in virtual machine](http://www.wikigain.com/fix-macos-sierra-screen-resolution-virtualbox/)
 
 
-## Author
+# Authors
 
 This project was created in 2015 by [Jeff Geerling](http://jeffgeerling.com/) and extended in 2016 by [Michael Lihs](http://lihsmi.ch)
