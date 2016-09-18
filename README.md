@@ -51,6 +51,13 @@ Follow the instructions from [https://www.vagrantup.com/docs/virtualbox/boxes.ht
     ```
 
 1. Add the insecure public key for the vagrant user from [https://github.com/mitchellh/vagrant/tree/master/keys](https://github.com/mitchellh/vagrant/tree/master/keys). Add it to the `/Users/vagrant/.ssh/authorized_keys` file and make sure that the `.ssh` directory has filemode `0700` and `authorized_keys` has filemode `0600`.
+1. Start ssh server in Mac OS X virtual machine and enable remote access for user `vagrant`
+1. Shut down virtual machine.
+1. On the host machine, run the following command to export the Vagrant box (replace `virtual-machine-name` with the actual name of your vm):
+
+   ``` sh
+   vagrant package --base "virtual-machine-name"
+   ```
 
 
 # Further Resources
