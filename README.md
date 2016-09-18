@@ -69,6 +69,12 @@ Follow the instructions from [https://www.vagrantup.com/docs/virtualbox/boxes.ht
    vagrant package --base "virtual-machine-name"
    ```
 
+You can test your box with the following command:
+
+``` sh
+vagrant box add your-box-name /path/to/vagrant.box
+```
+
 
 # Further Resources
 
