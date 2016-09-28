@@ -79,6 +79,8 @@ vagrant box add your-box-name /path/to/vagrant.box
 # Further Resources
 
 * [Fix screen resolution in virtual machine](http://www.wikigain.com/fix-macos-sierra-screen-resolution-virtualbox/)
+* [Vagrant Box for Mac OS](https://github.com/AndrewDryga/vagrant-box-osx)
+* [VM Templates for Mac OS (Packer)](https://github.com/timsutton/osx-vm-templates)
 
 
 # Authors
